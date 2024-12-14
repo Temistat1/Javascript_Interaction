@@ -1,0 +1,85 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #333;
+}
+
+h1 {
+  color: #5A2D82;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+.container {
+  text-align: center;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+input[type="text"] {
+  padding: 10px 15px;
+  font-size: 1rem;
+  width: 70%;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #5A2D82;
+  outline: none;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #5A2D82;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #7E56B4;
+}
+
+.output {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 8px;
+  background-color: #f2f2f2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* Animation for fortune text */
+.output {
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
